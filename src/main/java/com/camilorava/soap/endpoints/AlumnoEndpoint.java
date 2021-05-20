@@ -1,11 +1,11 @@
 package com.camilorava.soap.endpoints;
 
+import com.camilorava.soap.repository.AlumnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
-
 import com.camilorava.soap.domain.Alumno;
 import com.camilorava.webservicesoap.AlumnoInfo;
 import com.camilorava.webservicesoap.GetAlumnoRequest;
@@ -14,7 +14,7 @@ import com.camilorava.webservicesoap.GetAlumnoResponse;
 
 @Endpoint
 public class AlumnoEndpoint {
-    private static final String NAMESPACE_URI = "http://formacion.ipartek.com/web-service-soap";
+    private static final String NAMESPACE_URI = "http://camilorava.com/webservicesoap";
 
     @Autowired
     private AlumnoRepository alumnoRepository;
